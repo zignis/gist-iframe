@@ -3,11 +3,11 @@
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-This plugin works on the principle of `window.postMessage` API to set the height of the iFrame dynamically.
+This plugin works on the principle of `window.postMessage()` API to set the height of the iFrame dynamically.
 
 ## ⚙️ Terminology
 - This plugin renders a Gist on the `/api/gist` API route to aid same-origin policy.
-- The API route uses `window.postMessage` API to send the height of the Gist to the front-end.
+- The API route uses `window.postMessage()` API to send the height of the Gist to the front-end.
 - THe iFrame's height is received on the font-end and the height of the respective Gist iFrame is set accordingly.
 
 ## 🪱 Regex
@@ -47,4 +47,13 @@ useEffect(() => {
   window.addEventListener('message', receiveMessage, false);
 
 });
-  ```
+```
+
+## :link: Links
+- [GitHub Gist](https://gist.github.com/)
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [postMessage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage)
+
+## :ledger: License
+[Apache License 2.0](https://github.com/HexM7/gist-iframe/blob/main/LICENSE)

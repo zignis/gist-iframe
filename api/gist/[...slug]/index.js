@@ -10,7 +10,7 @@ export default function handler(req, res) {
       <head>
         <base target="_blank" />
       </head>
-      <body onLoad="sendData()" style="marign:0px;" id="gist-iframe">
+      <body onLoad="sendData()" style="margin: 0px;" id="gist-iframe">
         <script src="https://gist.github.com/${slug[0]}/${slug[1]}.js"></script>
         <script>
           function sendData() {
